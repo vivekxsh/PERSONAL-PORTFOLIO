@@ -2,6 +2,7 @@ import About from "./components/About"
 import Achievement from "./components/Achivement"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
 import Responsibility from "./components/Responsibility"
 import Technologies from "./components/Technologies"
 
@@ -20,6 +21,7 @@ const App = () => {
         <Technologies />
         <Responsibility />
         <Achievement />
+        <Projects />
       </div>
 
 
