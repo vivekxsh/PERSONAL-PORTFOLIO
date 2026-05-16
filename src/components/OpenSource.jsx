@@ -1,7 +1,7 @@
-import { ACHIEVEMENT } from "../constants";
+import { OPEN_SOURCE_CONTRIBUTIONS } from "../constants";
 import { motion } from "framer-motion";
 
-const Achievement = () => {
+const OpenSource = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
       <motion.h2
@@ -10,13 +10,13 @@ const Achievement = () => {
         transition={{ duration: 0.6 }}
         className="my-20 text-center text-4xl font-bold"
       >
-        Achievements
+        Open Source & Hacktoberfest
       </motion.h2>
 
       <div className="relative mx-auto max-w-7xl px-4">
-        <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gradient-to-b from-purple-500 via-pink-500 to-cyan-500 rounded-full" />
+        <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gradient-to-b from-purple-500 via-cyan-500 to-pink-500 rounded-full" />
 
-        {ACHIEVEMENT.map((item, index) => {
+        {OPEN_SOURCE_CONTRIBUTIONS.achievements.map((item, index) => {
           const isLeft = index % 2 === 0;
 
           return (
@@ -33,24 +33,26 @@ const Achievement = () => {
 
               <div className="w-full md:w-1/2 px-4">
                 <div className="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8 backdrop-blur-lg shadow-lg hover:border-purple-500 transition">
-                  <p className="text-sm text-purple-400">{item.year}</p>
+                  <p className="text-sm text-purple-400">
+                    {OPEN_SOURCE_CONTRIBUTIONS.duration}
+                  </p>
+
                   <h3 className="text-xl font-bold text-white mt-2">
-                    {item.position}
+                    {item.project}
                   </h3>
+
+                  <a
+                    href={item.issueLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-cyan-400 hover:underline mt-2 inline-block"
+                  >
+                    {item.issue}
+                  </a>
+
                   <p className="text-neutral-400 mt-3">
                     {item.description}
                   </p>
-
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {item.language.map((lang, i) => (
-                      <span
-                        key={i}
-                        className="rounded-full bg-purple-500/10 px-3 py-1 text-sm text-purple-300 border border-purple-500/20"
-                      >
-                        {lang}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             </motion.div>
@@ -61,4 +63,4 @@ const Achievement = () => {
   );
 };
 
-export default Achievement;
+export default OpenSource;

@@ -49,6 +49,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiMongodb className="text-7xl text-cyan-400" />
+          <p className="text-center">MongoDB</p>
         </motion.div>
 
         {/* ExpressJs icon  */}
@@ -59,6 +60,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiExpress className="text-7xl" />
+          <p className="text-center">Express.js</p>
         </motion.div>
 
         {/* react js  */}
@@ -69,6 +71,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <RiReactjsLine className="text-7xl text-green-500" />
+          <p className="text-center">React.js</p>
         </motion.div>
 
         {/* next js icon  */}
@@ -79,9 +82,10 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <TbBrandNextjs className="text-7xl text-red-400" />
+          <p className="text-center">Next.js</p>
         </motion.div>
         
-        {/* next js icon  */}
+        {/* BootStrap icon  */}
         <motion.div
           variants={iconVaiants(2)}
           initial="initial"
@@ -89,6 +93,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiBootstrap className="text-7xl text-red-400" />
+          <p className="text-center">Bootstrap</p>
         </motion.div>
 
         {/* Tailwind icon  */}
@@ -99,6 +104,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiTailwindcss className="text-7xl text-red-400" />
+          <p className="text-center">Tailwind</p>
         </motion.div>
 
         {/* Js icon  */}
@@ -109,6 +115,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <FaNodeJs className="text-7xl text-green-500" />
+          <p className="text-center">Node.js</p>
         </motion.div>
 
         {/* my sql */}
@@ -119,6 +126,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiMysql className="text-7xl text-sky-700" />
+          <p className="text-center">MySQL</p>
         </motion.div>
 
         {/* github  */}
@@ -129,16 +137,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <FaGithub className="text-7xl text-sky-700" />
-        </motion.div>
-
-        {/* JWT  */}
-        <motion.div
-          variants={iconVaiants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiJsonwebtokens className="text-7xl text-sky-700" />
+          <p className="text-center">GitHub</p>
         </motion.div>
         
         {/* Netlify  */}
@@ -149,6 +148,7 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiNetlify className="text-7xl text-sky-700" />
+          <p className="text-center">Netlify</p>
         </motion.div>
       </motion.div>
     </div>
